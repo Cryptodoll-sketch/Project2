@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>ContactUs</title>
+</head>
+<body>
+    <div id="ContactUs">
+        <h1>ContactUs</h1>
+        <form action="#">
+            <div class="form-shape">
+                <label for="query">
+                 Type of Query
+                </label>
+                <select id="query" name="myquery">
+                    <option value="sel" selected>Select</option>
+                    <option value="ord">Order related Issues</option>
+                    <option value="Site">Site related Issue</option>
+                    <option value="feed">Complaint related Issues</option>
+                    <option value="oth">Others</option>
+                </select>
+            </div>
+            <div class="form-shape">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="myName" placeholder="Enter your name">
+            </div>
+            <div class="form-shape">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="myEmail" placeholder="Enter your email">
+            </div>
+            <div class="form-shape">
+                <label for="pho">Phone Number</label>
+                <input type="phone" id="pho" name="myPhone" placeholder="Enter your phone number">
+            </div>
+            <div id="radio">
+                Are you a member of our FoodShop?
+                Yes<input type="radio" name="eligible">
+                No<input type="radio" name="eligible">
+            </div>
+            <div class="form-shape">
+                <label for="message">Elaborate your query</label>
+                <textarea id="message" name="myMessage" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
